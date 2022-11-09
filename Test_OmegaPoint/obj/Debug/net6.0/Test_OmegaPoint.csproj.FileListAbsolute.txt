@@ -1,0 +1,15 @@
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/bin/Debug/net6.0/Test_OmegaPoint
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/bin/Debug/net6.0/Test_OmegaPoint.deps.json
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/bin/Debug/net6.0/Test_OmegaPoint.runtimeconfig.json
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/bin/Debug/net6.0/Test_OmegaPoint.dll
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/bin/Debug/net6.0/Test_OmegaPoint.pdb
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/Test_OmegaPoint.csproj.AssemblyReference.cache
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/Test_OmegaPoint.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/Test_OmegaPoint.AssemblyInfoInputs.cache
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/Test_OmegaPoint.AssemblyInfo.cs
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/Test_OmegaPoint.csproj.CoreCompileInputs.cache
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/Test_OmegaPoint.dll
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/refint/Test_OmegaPoint.dll
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/Test_OmegaPoint.pdb
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/Test_OmegaPoint.genruntimeconfig.cache
+/Users/ellenlindefelt/Projects/Test_OmegaPoint/Test_OmegaPoint/obj/Debug/net6.0/ref/Test_OmegaPoint.dll

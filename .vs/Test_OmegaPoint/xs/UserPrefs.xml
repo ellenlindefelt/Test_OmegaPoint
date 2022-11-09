@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{865D36D8-3718-46C0-AB3A-F5FD5C444890}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test_OmegaPoint/Verifier.cs">
+    <Files>
+      <File FileName="Test_OmegaPoint/Program.cs" Line="9" Column="53" />
+      <File FileName="Test_OmegaPoint/PNumValidityChecker.cs" Line="6" Column="105" />
+      <File FileName="Test_OmegaPoint/SamNumChecker.cs" Line="6" Column="105" />
+      <File FileName="Test_OmegaPoint/OrgNumChecker.cs" Line="6" Column="106" />
+      <File FileName="Test_OmegaPoint/LuhnCheck.cs" Line="4" Column="90" />
+      <File FileName="Test_OmegaPoint/Converter.cs" Line="4" Column="105" />
+      <File FileName="Test_OmegaPoint/InputFormat.cs" Line="7" Column="62" />
+      <File FileName="Test_OmegaPoint/IValidityChecker.cs" Line="4" Column="100" />
+      <File FileName="Test_OmegaPoint/Verifier.cs" Line="4" Column="78" />
+      <File FileName="Test_OmegaPoint/IAlgorithm.cs" Line="4" Column="104" />
+      <File FileName="Test_OmegaPoint/IConverter.cs" Line="5" Column="92" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Test_OmegaPoint" expanded="True">
+            <Node name="Test_OmegaPoint" expanded="True">
+              <Node name="Verifier.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Test__OmegaPoint PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>
