@@ -1,11 +1,13 @@
 ﻿using System;
 namespace Test_OmegaPoint
 {
-    public class Converter : IConverter<string,List<int>> //Konverterar en string till en lista av ints.
+    public class Converter : IConverter<string,List<int>> 
     {
         public Converter()
         {
         }
+
+        //Convert a string to list of ints (used in LuhnChecker.validityCheck)
         public List<int> Convert(string input)
         {
             input = String.Concat(input.Where(x => Char.IsDigit(x)).ToList());

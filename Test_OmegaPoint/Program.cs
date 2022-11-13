@@ -1,19 +1,51 @@
-﻿using Test_OmegaPoint;
+﻿using System.Globalization;
+using Test_OmegaPoint;
 
-//Skapa klasserna med format som är specifikt för de olika numren,
-PNumValidityChecker check = new PNumValidityChecker();
-SamNumChecker samCheck = new SamNumChecker();
-OrgNumChecker orgCheck = new OrgNumChecker();
+//Instantiate validitychecks.
+IValidityChecker SSNFormChecker = new SSNFormatChecker();
+IValidityChecker samNumFormChecker = new SamNumFormatChecker();
+IValidityChecker orgNumFormChecker = new OrgNumFormatChecker();
+NullorEmptyChecker nullorEmptyChecker = new NullorEmptyChecker();
+StringPatternChecker patternChecker = new StringPatternChecker();
+LuhnChecker luhnChecker = new LuhnChecker();
+
+//Instantiate verifiers.
+Verifier SSNVerifier = new Verifier(SSNFormChecker, nullorEmptyChecker, patternChecker, luhnChecker);
+Verifier samNumVerifier = new Verifier(samNumFormChecker, nullorEmptyChecker, patternChecker, luhnChecker);
+Verifier orgNumVerifier = new Verifier(orgNumFormChecker, nullorEmptyChecker, patternChecker, luhnChecker);
 
 
-//Skapa ett verifierings objekt för de olika numren.
-Verifier pNumVerifier = new Verifier(check, new LuhnCheck(), new StringFormat(), new Converter());
-Verifier samNumVerifier = new Verifier(samCheck, new LuhnCheck(), new StringFormat(), new Converter());
-Verifier orgNumVerifier = new Verifier(orgCheck, new LuhnCheck(), new StringFormat(), new Converter());
+/* Simple code for asking and validating arbitrary strings as specified
+SSN/Samordningsnummer/Organisationsnummer.*/
+Console.WriteLine("Skriv ett personummer för validering:");
+string? SSN = Console.ReadLine();
+bool validSSN = SSNVerifier.Verify(SSN);
 
-Console.WriteLine(pNumVerifier.Verify("141206-2380"));
-Console.WriteLine(orgNumVerifier.Verify("556614-3185"));
-Console.WriteLine(samNumVerifier.Verify("190910799824"));
+if (validSSN)
+{
+    Console.WriteLine($"Input: {SSN} is valid");
+}
+Console.WriteLine();
 
+Console.WriteLine("Skriv ett samordningsnummer för validering:");
+string? SamNum = Console.ReadLine(); Console.ReadLine();
+bool validSamNum = samNumVerifier.Verify(SamNum);
+if (validSamNum)
+{
+    Console.WriteLine($"Input: {SamNum} is valid");
+}
+Console.WriteLine();
+
+
+Console.WriteLine("Skriv ett organisationsnummer för validering:");
+string? OrgNum = Console.ReadLine(); Console.ReadLine();
+
+bool validOrgNum = orgNumVerifier.Verify(OrgNum);
+if (validOrgNum)
+{
+    Console.WriteLine($"Input: {OrgNum} is valid");
+}
 
 Console.ReadKey();
+
+

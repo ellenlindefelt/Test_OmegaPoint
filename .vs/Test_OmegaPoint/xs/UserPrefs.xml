@@ -1,31 +1,38 @@
 ﻿<Properties StartupConfiguration="{865D36D8-3718-46C0-AB3A-F5FD5C444890}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Test_OmegaPoint/Verifier.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test_OmegaPoint/OrgNumFormatChecker.cs">
     <Files>
-      <File FileName="Test_OmegaPoint/Program.cs" Line="9" Column="53" />
-      <File FileName="Test_OmegaPoint/PNumValidityChecker.cs" Line="6" Column="105" />
-      <File FileName="Test_OmegaPoint/SamNumChecker.cs" Line="6" Column="105" />
-      <File FileName="Test_OmegaPoint/OrgNumChecker.cs" Line="6" Column="106" />
-      <File FileName="Test_OmegaPoint/LuhnCheck.cs" Line="4" Column="90" />
-      <File FileName="Test_OmegaPoint/Converter.cs" Line="4" Column="105" />
-      <File FileName="Test_OmegaPoint/InputFormat.cs" Line="7" Column="62" />
-      <File FileName="Test_OmegaPoint/IValidityChecker.cs" Line="4" Column="100" />
-      <File FileName="Test_OmegaPoint/Verifier.cs" Line="4" Column="78" />
-      <File FileName="Test_OmegaPoint/IAlgorithm.cs" Line="4" Column="104" />
+      <File FileName="Test_OmegaPoint/Program.cs" Line="24" Column="1" />
+      <File FileName="Test_OmegaPoint/PNumValidityChecker.cs" Line="13" Column="21" />
+      <File FileName="Test_OmegaPoint/SamNumChecker.cs" Line="40" Column="10" />
+      <File FileName="Test_OmegaPoint/OrgNumChecker.cs" Line="34" Column="10" />
+      <File FileName="Test_OmegaPoint/LuhnCheck.cs" Line="9" Column="34" />
+      <File FileName="Test_OmegaPoint/Converter.cs" Line="18" Column="31" />
+      <File FileName="Test_OmegaPoint/IValidityChecker.cs" Line="6" Column="34" />
+      <File FileName="Test_OmegaPoint/Verifier.cs" Line="14" Column="43" />
       <File FileName="Test_OmegaPoint/IConverter.cs" Line="5" Column="92" />
+      <File FileName="Test_OmegaPoint/StringFormat.cs" Line="12" Column="21" />
+      <File FileName="Tests/UnitTest1.cs" Line="57" Column="53" />
+      <File FileName="Test_OmegaPoint/NullorEmptyCheck.cs" Line="10" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Test_OmegaPoint" expanded="True">
-            <Node name="Test_OmegaPoint" expanded="True">
-              <Node name="Verifier.cs" selected="True" />
+            <Node name="Test_OmegaPoint" expanded="True" />
+            <Node name="Tests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Test_OmegaPoint" expanded="True" />
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

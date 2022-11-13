@@ -3,14 +3,19 @@ using System.Text.RegularExpressions;
 
 namespace Test_OmegaPoint
 {
-    public class StringFormat // Jämför string med regular expressions för att kontrollera format.
-                              // Samma för alla olika numren.
+    public class StringPatternChecker : IValidityChecker
+                                               
     { 
-        public StringFormat()
+        public StringPatternChecker()
         {
         }
-        public bool checkFormat(string input)
-        {
+
+        /*Checks if input follows the allowed format for SSN/Samordningsnummer/
+        Organisationsnummer using regular expressions to match string against
+        a set of defined patterns.*/
+
+        public bool validityCheck(string input)
+        {   
             string format1 = @"(^[0-9]{12}$)";
             string format2 = @"(^[0-9]{6}[-+]?[0-9]{4}$)";
             string format3 = @"(^[0-9]{8}\-[0-9]{4}$)";
@@ -19,23 +24,23 @@ namespace Test_OmegaPoint
 
             if (regex.IsMatch(input))
             {
-                Console.WriteLine("format1 is ok!");
+
                 return true;
             }
             regex = new Regex(format2);
 
             if (regex.IsMatch(input))
             {
-                Console.WriteLine("format2 is ok!");
+
                 return true;
             }
             regex = new Regex(format3);
             if (regex.IsMatch(input))
             {
-                Console.WriteLine("format3 is ok!");
+
                 return true;
             }
-            Console.WriteLine("Wrong format");
+
             return false;
         }
     }
