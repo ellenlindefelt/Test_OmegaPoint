@@ -6,7 +6,9 @@ namespace Test_OmegaPoint
         public DateChecker()
         {
         }
-
+        
+        /*Checks if date is valid, keeping track of leapyears. 
+         Used by SSNFormatChecker & SamNumFormatChecker. */
         public bool IsValidDate(string input)
         {
             bool isLeapYear = IsLeapYear(input);
