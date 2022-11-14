@@ -62,6 +62,8 @@ public class Tests
 
         Assert.False(SSNChecker.validityCheck("179912299816"));
         Assert.False(SSNChecker.validityCheck("189912809816"));
+        Assert.False(SSNChecker.validityCheck("190302299813"));
+        Assert.False(SSNChecker.validityCheck("030229+9813"));
     }
 
     [Test]
@@ -69,6 +71,9 @@ public class Tests
     {
         IValidityChecker samNumChecker = new SamNumFormatChecker();
         Assert.True(samNumChecker.validityCheck("190910799824"));
+        Assert.True(samNumChecker.validityCheck("0910799824"));
+        Assert.True(samNumChecker.validityCheck("091079+9824"));
+
 
         Assert.False(samNumChecker.validityCheck("170910799824"));
         Assert.False(samNumChecker.validityCheck("190910599824"));
@@ -142,6 +147,7 @@ public class Tests
         Assert.True(SSNVerifier.Verify("189912299816"));
 
         Assert.False(SSNVerifier.Verify("201701272394"));
+        Assert.False(SSNVerifier.Verify("190302299813"));
         Assert.False(SSNVerifier.Verify(""));
         Assert.False(SSNVerifier.Verify("171701102384"));
         Assert.False(SSNVerifier.Verify("20170110x2384"));
@@ -158,6 +164,7 @@ public class Tests
         Assert.True(SamNumVerifier.Verify("19091079-9824"));
         Assert.True(SamNumVerifier.Verify("091079-9824"));
         Assert.True(SamNumVerifier.Verify("0910799824"));
+        Assert.True(SamNumVerifier.Verify("091079+9824"));
 
         Assert.False(SamNumVerifier.Verify(""));
         Assert.False(SamNumVerifier.Verify(null));

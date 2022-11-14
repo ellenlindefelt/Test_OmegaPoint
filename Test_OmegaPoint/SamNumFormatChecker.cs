@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using Microsoft.VisualBasic;
 
 namespace Test_OmegaPoint
 {
@@ -12,7 +13,7 @@ namespace Test_OmegaPoint
         //Checks if input follows the allowed format for Samordningsnummer.
         public bool validityCheck(string input)
         {
-            if(validFormat(input) == false)
+            if (validFormat(input) == false)
             {
                 Console.WriteLine($"Input: {input} failed SamNumFormatValidityCheck");
                 return false;
@@ -20,34 +21,59 @@ namespace Test_OmegaPoint
 
             return true;
         }
+
+        // Checks if the date equals a real date + 60 //
         private bool validFormat(string input)
         {
-            input = String.Concat(input.Where(x => Char.IsDigit(x)));
-
-            if (input.Length > 10)
+            string temp = String.Concat(input.Where(x => Char.IsDigit(x)));
+            int.TryParse(temp.Substring((temp.Length - 6),2), out int day);
+            if (day < 61 || day > 91)
             {
-                var start = int.Parse(input.Substring(0, 4));
-                if (start < 1800)
-                {
+                return false;
+            }
+            if (new DateChecker().IsValidDate(ConvertToDate(input)) == false)
+            {
+                return false;
+            }
+         
+            return true;
+        }
 
-                    return false;
+        private string ConvertToDate(string input)
+        {
+            string output = "";
+            int length = input.Length;
+            if (input.Length % 2 == 0)
+            {
+                for (int i = 0; i < length; i++)
+                {
+                    if (i == length - 6)
+                    {
+                        int.TryParse(input[i].ToString(), out int temp);
+                        output += temp - 6;
+                    }
+                    else
+                    {
+                        output += input[i];
+                    }
                 }
             }
-            int.TryParse(input.Substring(input.Length - 6, 2), out int lastDigits);
-            if (lastDigits < 61 || lastDigits > 91)
+            else
             {
-
-                return false;
+                for (int i = 0; i < length; i++)
+                {
+                    if (i == length - 7)
+                    {
+                        int.TryParse(input[i].ToString(), out int temp);
+                        output += temp - 6;
+                    }
+                    else
+                    {
+                        output += input[i];
+                    }
+                }
             }
-            int.TryParse(input.Substring(input.Length - 8, 2), out int middleDigits);
-            if (middleDigits < 1 || middleDigits > 12)
-            {
-           
-                return false;
-            }
-
-            return true;
-
+            return output;
         }
     }
 }
