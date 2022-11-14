@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace Test_OmegaPoint
 {
-    public class OrgNumFormatChecker : IValidityChecker //Kontrollera specifikt format för Organisationsnummer.
+    public class OrgNumFormatChecker : IValidityChecker
     { 
         public OrgNumFormatChecker()
         {

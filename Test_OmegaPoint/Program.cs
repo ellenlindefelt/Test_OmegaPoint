@@ -17,7 +17,7 @@ Verifier orgNumVerifier = new Verifier(orgNumFormChecker, nullorEmptyChecker, pa
 
 /* Simple code for asking and validating arbitrary strings as specified
 SSN/Samordningsnummer/Organisationsnummer.*/
-Console.WriteLine("Skriv ett personummer för validering:");
+Console.WriteLine("Enter Social Security Number for validation:");
 string? SSN = Console.ReadLine();
 bool validSSN = SSNVerifier.Verify(SSN);
 
@@ -27,7 +27,7 @@ if (validSSN)
 }
 Console.WriteLine();
 
-Console.WriteLine("Skriv ett samordningsnummer för validering:");
+Console.WriteLine("Enter Co-ordnination Number for validation:");
 string? SamNum = Console.ReadLine(); Console.ReadLine();
 bool validSamNum = samNumVerifier.Verify(SamNum);
 if (validSamNum)
@@ -37,7 +37,7 @@ if (validSamNum)
 Console.WriteLine();
 
 
-Console.WriteLine("Skriv ett organisationsnummer för validering:");
+Console.WriteLine("Enter Organization Number for validation:");
 string? OrgNum = Console.ReadLine(); Console.ReadLine();
 
 bool validOrgNum = orgNumVerifier.Verify(OrgNum);

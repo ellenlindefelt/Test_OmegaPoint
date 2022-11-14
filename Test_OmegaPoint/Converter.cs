@@ -21,7 +21,6 @@ namespace Test_OmegaPoint
             {
                 output.RemoveRange(0, 2);
             }
-
             return output;
         }
     }
